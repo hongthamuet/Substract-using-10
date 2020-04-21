@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "portrait",
     "packageName": "com.example.gamename",
-    "projectFile": "/Users/repete/Documents/CNPM/Substract-using-10/game.json",
+    "projectFile": "D:\\Substract using 10\\Substract-using-10\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
