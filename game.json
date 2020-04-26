@@ -379,6 +379,33 @@
         "name": "Image/main.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "anh02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "anh02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Bản sao 0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bản sao 0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "anh01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "anh01.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -411,7 +438,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.328
+        "zoomFactor": 0.528
       },
       "objectsGroups": [],
       "variables": [],
@@ -560,7 +587,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Image\\0.png",
+                      "image": "anh01.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -638,7 +665,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Image\\2 (1).png",
+                      "image": "anh02.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
