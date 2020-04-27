@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "portrait",
     "packageName": "com.example.gamename",
-    "projectFile": "C:\\Users\\DELL\\Documents\\GitHub\\Substract-using-10\\game.json",
+    "projectFile": "D:\\Substract using 10\\Substract-using-10\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -122198,18 +122198,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"endScene\"",
-                ""
-              ],
-              "subInstructions": []
-            },
             {
               "type": {
                 "inverted": false,
