@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "portrait",
     "packageName": "com.example.gamename",
-    "projectFile": "C:\\Users\\DELL\\Documents\\GitHub\\Substract-using-10\\game.json",
+    "projectFile": "/Users/repete/Documents/CNPM/Substract-using-10/game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -438,7 +438,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.328
+        "zoomFactor": 0.5
       },
       "objectsGroups": [],
       "variables": [],
@@ -106893,7 +106893,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1
+        "zoomFactor": 0.7
       },
       "objectsGroups": [],
       "variables": [],
@@ -122198,18 +122198,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"endScene\"",
-                ""
-              ],
-              "subInstructions": []
-            },
             {
               "type": {
                 "inverted": false,
