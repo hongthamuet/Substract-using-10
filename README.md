@@ -19,5 +19,5 @@
   ![alt text](https://github.com/hongthamuet/Substract-using-10/blob/master/Image/endScreen.png)
 
 # Video demo phần mềm 
-  https://www.youtube.com/watch?v=GvWJ2zLgGbg&t=143s
+ https://www.youtube.com/watch?v=ml0ge3pxqR8&feature=youtu.be&fbclid=IwAR095fXB_vLPDgphRzcgSMvBm5mBsaYXP7Wt_v_6LcbXnrr9Eq7-8g8R77I
   
