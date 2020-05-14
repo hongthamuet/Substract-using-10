@@ -515,22 +515,26 @@
     {
       "name": "score",
       "value": ""
+    },
+    {
+      "name": "score1",
+      "value": "0"
     }
   ],
   "layouts": [
     {
-      "b": 209,
+      "b": 255,
       "disableInputWhenNotFocused": true,
       "mangledName": "startScene",
       "name": "startScene",
       "oglFOV": 90,
       "oglZFar": 500,
       "oglZNear": 1,
-      "r": 209,
+      "r": 255,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 209,
+      "v": 255,
       "uiSettings": {
         "grid": false,
         "gridB": 255,
@@ -542,26 +546,11 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.304
+        "zoomFactor": 0.442
       },
       "objectsGroups": [],
       "variables": [],
       "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 840,
-          "layer": "",
-          "locked": false,
-          "name": "background",
-          "width": 1695,
-          "x": 0,
-          "y": 0,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
         {
           "angle": 0,
           "customSize": true,
@@ -854,6 +843,18 @@
               },
               "parameters": [
                 "score",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
                 "=",
                 "0"
               ],
@@ -93661,6 +93662,18 @@
                 "3"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -94991,6 +95004,18 @@
                 "trueAnswer",
                 "=",
                 "5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -96462,6 +96487,18 @@
                 "5"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -96563,9 +96600,56 @@
                 "\"223;53;26\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "score1",
+                    "<=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "score1",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -96629,6 +96713,18 @@
               "parameters": [
                 "complete",
                 "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
+                "+",
                 "1"
               ],
               "subInstructions": []
@@ -97684,6 +97780,18 @@
                 "5"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -98599,6 +98707,18 @@
                 "trueAnswer",
                 "=",
                 "3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -99776,6 +99896,18 @@
                 "2"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -100691,6 +100823,18 @@
                 "trueAnswer",
                 "=",
                 "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -101900,6 +102044,18 @@
                 "trueAnswer",
                 "=",
                 "4"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -103232,6 +103388,18 @@
                 "trueAnswer",
                 "=",
                 "4"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -104703,6 +104871,18 @@
                 "6"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -104804,9 +104984,56 @@
                 "\"223;53;26\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "score1",
+                    "<=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "score1",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -104870,6 +105097,18 @@
               "parameters": [
                 "complete",
                 "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
+                "+",
                 "1"
               ],
               "subInstructions": []
@@ -105630,6 +105869,18 @@
                 "trueAnswer",
                 "=",
                 "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -106805,6 +107056,18 @@
                 "trueAnswer",
                 "=",
                 "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -108015,6 +108278,18 @@
                 "trueAnswer",
                 "=",
                 "6"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -109347,6 +109622,18 @@
                 "trueAnswer",
                 "=",
                 "6"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -110818,6 +111105,18 @@
                 "4"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -110919,9 +111218,56 @@
                 "\"223;53;26\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "score1",
+                    "<=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "score1",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -110985,6 +111331,18 @@
               "parameters": [
                 "complete",
                 "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
+                "+",
                 "1"
               ],
               "subInstructions": []
@@ -112120,6 +112478,18 @@
                 "trueAnswer",
                 "=",
                 "3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -113295,6 +113665,18 @@
                 "trueAnswer",
                 "=",
                 "3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -114505,6 +114887,18 @@
                 "trueAnswer",
                 "=",
                 "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -115837,6 +116231,18 @@
                 "trueAnswer",
                 "=",
                 "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -117308,6 +117714,18 @@
                 "8"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -117409,9 +117827,56 @@
                 "\"223;53;26\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "score1",
+                    "<=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "score1",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -117475,6 +117940,18 @@
               "parameters": [
                 "complete",
                 "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
+                "+",
                 "1"
               ],
               "subInstructions": []
@@ -118235,6 +118712,18 @@
                 "trueAnswer",
                 "=",
                 "6"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -119410,6 +119899,18 @@
                 "trueAnswer",
                 "=",
                 "6"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -120620,6 +121121,18 @@
                 "trueAnswer",
                 "=",
                 "3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -121952,6 +122465,18 @@
                 "trueAnswer",
                 "=",
                 "3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -123423,6 +123948,18 @@
                 "7"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -123524,9 +124061,56 @@
                 "\"223;53;26\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "score1",
+                    "<=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "score1",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -123590,6 +124174,18 @@
               "parameters": [
                 "complete",
                 "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
+                "+",
                 "1"
               ],
               "subInstructions": []
@@ -124350,6 +124946,18 @@
                 "trueAnswer",
                 "=",
                 "7"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -125525,6 +126133,18 @@
                 "trueAnswer",
                 "=",
                 "7"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -126735,6 +127355,18 @@
                 "trueAnswer",
                 "=",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -128067,6 +128699,18 @@
                 "trueAnswer",
                 "=",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
               ],
               "subInstructions": []
             }
@@ -129538,6 +130182,18 @@
                 "9"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "bar",
+                "=",
+                "GlobalVariable(score1)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -129639,9 +130295,56 @@
                 "\"223;53;26\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "score1",
+                    "<=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "score1",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -129705,6 +130408,18 @@
               "parameters": [
                 "complete",
                 "=",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "score1",
+                "+",
                 "1"
               ],
               "subInstructions": []
