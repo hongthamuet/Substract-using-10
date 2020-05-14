@@ -505,6 +505,15 @@
         "name": "Image\\bar1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Image/Back.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Image\\Back.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -570,7 +579,7 @@
           "locked": false,
           "name": "nameofgame",
           "width": 798,
-          "x": 301,
+          "x": 318,
           "y": 64,
           "zOrder": 3,
           "numberProperties": [],
@@ -1317,7 +1326,7 @@
           "locked": false,
           "name": "back",
           "width": 0,
-          "x": 294,
+          "x": 328,
           "y": 50,
           "zOrder": 3,
           "numberProperties": [],
@@ -1350,6 +1359,21 @@
           "x": 680,
           "y": 256,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Back",
+          "width": 0,
+          "x": 298,
+          "y": 45,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1444,7 +1468,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "< Back",
+          "string": "Back",
           "font": "",
           "characterSize": 22,
           "color": {
@@ -1490,6 +1514,45 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "name": "Back",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Image\\Back.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -1595,6 +1658,62 @@
                   "parameters": [
                     "",
                     "\"screen1.1\"",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Back",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisBouton"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"startScene\"",
                     ""
                   ],
                   "subInstructions": []
