@@ -542,7 +542,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.304
+        "zoomFactor": 0.5126
       },
       "objectsGroups": [],
       "variables": [],
@@ -668,9 +668,9 @@
           "font": "",
           "characterSize": 36,
           "color": {
-            "b": 25,
-            "g": 25,
-            "r": 194
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         },
         {
@@ -1274,7 +1274,7 @@
         "gridWidth": 32,
         "snap": false,
         "windowMask": false,
-        "zoomFactor": 0.304
+        "zoomFactor": 0.7436
       },
       "objectsGroups": [],
       "variables": [],
